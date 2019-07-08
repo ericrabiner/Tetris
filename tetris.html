@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Tetris</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="./tetris.css">
+</head>
+<body>
+
+	<div class="container-game">
+		<div class="alert alert-primary" id="rulesBox">
+			<h4 class="alert-heading display-2">Controls</h4>
+			<hr>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item d-flex justify-content-between align-items-center">move tetris
+					<span class="badge badge-primary badge-pill">arrows</span>
+				</li>
+				<li class="list-group-item d-flex justify-content-between align-items-center">rotate clockwise
+					<span class="badge badge-primary badge-pill">q</span>
+				</li>
+				<li class="list-group-item d-flex justify-content-between align-items-center">rotate counter-clockwise
+					<span class="badge badge-primary badge-pill">w</span>
+				</li>
+				
+			</ul>
+			<!-- <div class="rulesText">Arrows: move tetris</div>
+			<div class="rulesText">q: rotate clockwise</div>
+			<div class="rulesText">w: rotate counter-clockwise</div> -->
+			<button type="button" class="btn btn-primary btn-lg btn-block" id="playgame"><i class="fas fa-play-circle"></i></button>
+			
+			<!-- <a><input type="button" id="playgame"><i class="fas fa-play-circle"></i> -->
+		</div>
+		<div id="score"></div>
+		<canvas id="tetris" width="240" height="400"></canvas>
+	</div>
+	<script src="https://kit.fontawesome.com/220abedaa4.js"></script>
+	<script src="./tetris.js"></script>
+</body>
+</html>
